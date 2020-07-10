@@ -1,10 +1,17 @@
 body {
-  background: rgb(67, 68, 54);
+  font-family: "Fredoka One", sans-serif;
+  font-size: 20px;
+  background: rgb(56, 56, 75);
   color: white;
 }
 
 h1 {
   text-align: center;
+}
+
+h3 {
+  text-align: right;
+  margin-right: 100px;
 }
 
 .game-board {
@@ -59,15 +66,29 @@ h1 {
   z-index: 1;
 }
 
+.quadrant {
+  opacity: 1;
+}
+
 .quadrant:hover {
-  opacity: 0.5;
+  opacity: 1;
+}
+
+.flash {
+  opacity: 0.1;
 }
 
 footer {
   text-align: center;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .start {
-  height: 50px width 100px;
+  height: 40px;
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
 }

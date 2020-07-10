@@ -5,21 +5,23 @@
         <title>Simon Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>SIMON</h1>
+            <h1>SIMON !</h1>
+            <h3 class="score">Score:<span> 0 </span></h3>
         </header>
         <div class="game-board">
         <div>
-            <div class="top-left-quadrant quadrant"></div>
-            <div class="top-right-quadrant quadrant"></div>
+            <div class="top-left-quadrant quadrant" data-index="0"></div>
+            <div class="top-right-quadrant quadrant" data-index="1"></div>
         </div>
             <div class="center"></div>
         <div>
-            <div class="bottom-left-quadrant quadrant"></div>
-            <div class="bottom-right-quadrant quadrant"></div>
+            <div class="bottom-left-quadrant quadrant" data-index="2"></div>
+            <div class="bottom-right-quadrant quadrant" data-index="3"></div>
         </div>
         </div>
     <footer>
