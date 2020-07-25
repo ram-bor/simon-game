@@ -12,6 +12,7 @@ h1 {
 h3 {
   text-align: right;
   margin-right: 100px;
+  color: rgb(227, 195, 39);
 }
 
 .game-board {
@@ -71,7 +72,7 @@ h3 {
 }
 
 .quadrant:hover {
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .flash {
@@ -91,4 +92,8 @@ footer {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
+
+.score {
+  color: rgb(227, 195, 39);
 }

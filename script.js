@@ -6,6 +6,7 @@ const blue = document.querySelector(".bottom-right-quadrant");
 
 const quadrant = document.querySelectorAll(".quadrant");
 const startButton = document.querySelector(".start");
+const score = document.querySelector(".score");
 
 const allQuad = [green, red, yellow, blue];
 
@@ -16,12 +17,13 @@ let roundCount = 0;
 let userChoice = [];
 
 // start button
-startButton.addEventListener("click", (e) => {
+startButton.addEventListener("click", e => {
   playGame();
-  console.log(e);
+  // console.log(e);
 });
 
 function compareInputChoice(e) {
+  // console.log(e);
   let quadChoice = parseInt(e.target.dataset.index);
   userChoice.push(quadChoice);
   let lastElement = userChoice.length - 1;
@@ -35,6 +37,7 @@ function compareInputChoice(e) {
     sequence[lastElement] == userChoice[lastElement] &&
     userChoice.length == sequence.length
   ) {
+    addScore();
     showSequence();
   } else {
     alert("game over!");
@@ -43,6 +46,12 @@ function compareInputChoice(e) {
 
 for (let i = 0; i < quadrant.length; i++) {
   quadrant[i].addEventListener("click", compareInputChoice);
+  quadrant[i].addEventListener("click", toggleHighlight);
+}
+
+// cb function for button click event to highlight
+function toggleHighlight() {
+  console.log("clicked!");
 }
 
 // add flash
@@ -88,3 +97,14 @@ function showSequence() {
 function playGame() {
   showSequence();
 }
+
+// increase score everytime guess is correct
+addScore = () => {
+  let currentScore = parseInt(score.innerText);
+  if (currentScore !== 1000) {
+    currentScore += 100;
+    score.innerText = currentScore;
+    console.log(currentScore);
+  } else {
+  }
+};
