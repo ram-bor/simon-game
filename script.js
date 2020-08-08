@@ -6,6 +6,7 @@ const blue = document.querySelector(".bottom-right-quadrant");
 
 const quadrant = document.querySelectorAll(".quadrant");
 const startButton = document.querySelector(".start");
+const resetButton = document.querySelector(".reset");
 const score = document.querySelector(".score");
 
 const allQuad = [green, red, yellow, blue];
@@ -32,7 +33,7 @@ function compareInputChoice(e) {
     sequence[lastElement] == userChoice[lastElement] &&
     userChoice.length < sequence.length
   ) {
-    console.log("great! guess the next button");
+    console.log("Great! Guess the next button");
   } else if (
     sequence[lastElement] == userChoice[lastElement] &&
     userChoice.length == sequence.length
@@ -40,7 +41,8 @@ function compareInputChoice(e) {
     addScore();
     showSequence();
   } else {
-    alert("game over!");
+    alert("Game over! Simon says... to reset game!");
+    resetGame();
   }
 }
 
@@ -51,7 +53,7 @@ for (let i = 0; i < quadrant.length; i++) {
 
 // cb function for button click event to highlight
 function toggleHighlight() {
-  console.log("clicked!");
+  // console.log("clicked!");
 }
 
 // add flash
@@ -107,4 +109,31 @@ addScore = () => {
     console.log(currentScore);
   } else {
   }
+};
+
+// function to clear score and reset it to zero
+clearScore = () => {
+  let currentScore = parseInt(score.innerText);
+  if (currentScore !== 0) {
+    currentScore = 0;
+    score.innerText = currentScore;
+    console.log("Score reset to: ", currentScore);
+  } else {
+  }
+};
+
+// reset game function: calls clear sequence and score functions, displays reset message in console
+resetGame = () => {
+  clearSequence();
+  clearScore();
+  console.log("Game reset, Press Start to play again!");
+};
+
+// function to clear sequence in order to restartgame
+clearSequence = () => {
+  sequence = [];
+  intervalSequence;
+  currentSequence = 0;
+  roundCount = 0;
+  userChoice = [];
 };

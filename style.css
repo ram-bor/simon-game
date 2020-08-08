@@ -94,6 +94,15 @@ footer {
   text-align: center;
 }
 
+.reset {
+  height: 40px;
+  width: 100px;
+  padding: 10px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .score {
   color: rgb(227, 195, 39);
 }
