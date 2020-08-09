@@ -1,5 +1,7 @@
 # simon-game
 
+# Created a Simon Game using HTML/CSS/Javascript with Score-Board
+
 - HTML x CSS
 - Javascript x Game Flow
 
