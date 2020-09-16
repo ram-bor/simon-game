@@ -8,7 +8,7 @@ Deployed Game: https://ram-bor.github.io/simon-game/
 
 Feeling nostalgic? Play a game of Simon! 
 
-Press Start to begin game. Simon will keep score for every correct guess. If you get one wrong, then *GAME OVER*
+Press Start to begin game. Simon will keep score for every correct guess. If you get one wrong, then **GAME OVER**
 
 ![](simon-gif.gif)
 
