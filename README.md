@@ -10,7 +10,7 @@ Feeling nostalgic? Play a game of Simon!
 
 Press Start to begin game. Simon will keep score for every correct guess. If you get one wrong, then *GAME OVER*
 
-simon-gif.gif
+![](simon-gif.gif)
 
 Note: Game is not responsive on smaller and mobile devices. Works best on a google chrome browser
 
