@@ -12,7 +12,7 @@ Press Start to begin game. Simon will keep score for every correct guess. If you
 
 ![](simon-gif.gif)
 
-Note: Game is not responsive on smaller and mobile devices. Works best on a google chrome browser
+Note: Game is not responsive on smaller and mobile devices. Works best on a google chrome browser.
 
 # Installation 
 
