@@ -1,10 +1,10 @@
 # Simon Game
 
-Created a Simon Game using HTML/CSS/Javascript with score board feature 
+Created a Simon Game with added score board feature 
 
 Deployed Game: https://ram-bor.github.io/simon-game/
 
-# Description
+## Description
 
 Feeling nostalgic? Play a game of Simon! 
 
@@ -14,13 +14,16 @@ Press Start to begin game. Simon will keep score for every correct guess. If you
 
 Note: Game is not responsive on smaller and mobile devices. Works best on a google chrome browser.
 
-# Installation 
+## Technologies 
+* HTML
+* CSS
+* Javascript
 
+## Installation 
 * Clone repo: https://github.com/ram-bor/simon-game
 * cd into directory 
-* open index.html in browser (preferably Chrome) and enjoy!
+* Open index.html in browser (preferrably Chrome) and enjoy!
 
-# Contact 
-
+## Contact 
 https://github.com/ram-bor
 
