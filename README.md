@@ -1,6 +1,6 @@
 # Simon Game
 
-Created a Simon Game with added score board feature 
+Created a Simon Game with score board feature 
 
 Deployed Game: https://ram-bor.github.io/simon-game/
 
